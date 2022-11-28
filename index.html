@@ -41,7 +41,7 @@
             <a href="#" class="nav-link" id="pagina-experiencia">Experiência</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" id="pagina-contato">Contato</a>
+            <a href="#" class="nav-link" id="contact-page">Contato</a>
           </li>
           <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Redes Sociais</a>
@@ -135,6 +135,11 @@
         $("#education-page").click(function(){
             $(function(){
                 $("#content-page").load("pages/education.html");
+            });
+        });
+        $("#contact-page").click(function(){
+            $(function(){
+                $("#content-page").load("pages/contact.html");
             });
         });
    });
