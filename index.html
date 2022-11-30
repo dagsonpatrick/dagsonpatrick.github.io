@@ -36,8 +36,13 @@
           <li class="nav-item">
             <a href="#" class="nav-link" id="education-page">Educação</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" id="experience-page">Experiência</a>
+          <li class="nav-item dropdown">
+            <a id="dropdownSubMenu0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Experiência</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item" id="experience-academic-page"><i class="fas fa-chalkboard-teacher"></i> Academic</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="#" class="dropdown-item" id="experience-profissional-page"><i class="fas fa-laptop-code"></i> Profissional</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" id="projects-page">Projects</a>
@@ -156,9 +161,14 @@
                 $("#content-page").load("pages/education.html");
             });
         });
-        $("#experience-page").click(function(){
+        $("#experience-academic-page").click(function(){
             $(function(){
-                $("#content-page").load("pages/experience.html");
+                $("#content-page").load("pages/academic_experience.html");
+            });
+        });
+        $("#experience-profissional-page").click(function(){
+            $(function(){
+                $("#content-page").load("pages/professional_experience.html");
             });
         });
         $("#projects-page").click(function(){
